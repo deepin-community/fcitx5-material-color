@@ -1,0 +1,17 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Fcitx5-Material-Color
+Source: https://github.com/hosxy/Fcitx5-Material-Color
+Upstream-Contact: https://github.com/hosxy/Fcitx5-Material-Color/issues
+
+Files:     *
+Copyright: 2019-2020 hosxy <hosxy@live.com>
+License:   Apache-2.0
+
+Files:     debian/*
+Copyright: 2020 Boyuan Yang <byang@debian.org>
+License:   public-domain
+ These files are released into the public domain.
+
+License: Apache-2.0
+ On Debian systems, the complete text of the Apache License version 2.0
+ can be found in "/usr/share/common-licenses/Apache-2.0".

@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/default.mk
+
+%:
+	dh $@
+
+INSTALL_DESTDIR = $(CURDIR)/debian/$(DEB_SOURCE)/
+
+# See https://github.com/archlinux/svntogit-community/blob/packages/
+#     fcitx5-material-color/trunk/PKGBUILD
+execute_after_dh_install:
+	install -Dm644 arrow.png radio.png -t $(INSTALL_DESTDIR)/usr/share/$(DEB_SOURCE)/
+	for _variant in $(patsubst theme-%.conf,%, $(wildcard theme-*.conf)); do \
+	    _variant_name=Material-Color-$$_variant ; \
+	    install -Dm644 theme-$$_variant.conf $(INSTALL_DESTDIR)/usr/share/fcitx5/themes/$$_variant_name/theme.conf ; \
+	    sed -i "s/^Name=.*/Name=$$_variant_name/" $(INSTALL_DESTDIR)/usr/share/fcitx5/themes/$$_variant_name/theme.conf ; \
+	    ln -s ../../../$(DEB_SOURCE)/arrow.png $(INSTALL_DESTDIR)/usr/share/fcitx5/themes/$$_variant_name/ ; \
+	    ln -s ../../../$(DEB_SOURCE)/radio.png $(INSTALL_DESTDIR)/usr/share/fcitx5/themes/$$_variant_name/ ; \
+	done

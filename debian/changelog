@@ -1,0 +1,48 @@
+fcitx5-material-color (0.2.1-1) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Input Method Team <debian-input-method@lists.debian.org>  Fri, 22 Apr 2022 03:33:59 -0400
+
+fcitx5-material-color (0.2.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version.
+
+ -- Shengjing Zhu <zhsj@debian.org>  Tue, 23 Feb 2021 02:37:37 +0800
+
+fcitx5-material-color (0.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Replace upstream README with README.Debian
+
+ -- Shengjing Zhu <zhsj@debian.org>  Tue, 23 Feb 2021 00:41:08 +0800
+
+fcitx5-material-color (0.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream version.
+  * Track upstream tag version
+  * Refactor debian/rules to support more themes
+  * Bump Standards-Version to 4.5.1
+  * Fix lintian vcs-field-not-canonical
+
+ -- Shengjing Zhu <zhsj@debian.org>  Sat, 12 Dec 2020 22:15:10 +0800
+
+fcitx5-material-color (0.0~git20200822.d6d1346-1) unstable; urgency=medium
+
+  * New upstream snapshot.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 10 Nov 2020 21:45:31 -0500
+
+fcitx5-material-color (0.0~git20200729.321f214-2) unstable; urgency=medium
+
+  * Source-only upload to allow testing migration.
+
+ -- Boyuan Yang <byang@debian.org>  Thu, 06 Aug 2020 10:55:00 -0400
+
+fcitx5-material-color (0.0~git20200729.321f214-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Boyuan Yang <byang@debian.org>  Tue, 09 Jun 2020 09:39:39 -0400
